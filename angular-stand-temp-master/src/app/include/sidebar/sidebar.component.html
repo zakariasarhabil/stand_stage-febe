@@ -1,0 +1,296 @@
+<!-- <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">Start Bootstrap </div>
+    <div class="list-group list-group-flush">
+      <a routerLink="/add-stand" class="list-group-item list-group-item-action bg-light">Ajouter un stand</a>
+      <a routerLink="/stands" class="list-group-item list-group-item-action bg-light">Liste De stands</a>
+      <a routerLink="/add-stand" class="list-group-item list-group-item-action bg-light">Events</a>
+      <a routerLink="/add-stand" class="list-group-item list-group-item-action bg-light">Profile</a>
+      <a routerLink="/add-stand" class="list-group-item list-group-item-action bg-light">Status</a>
+    </div>
+  </div> -->
+<!--   <div class="page-wrapper chiller-theme d-inline toggled">
+  <a id="show-sidebar" class="btn btn-sm btn-dark text-white">
+    <i class="fa fa-bars"></i>
+  </a>
+  <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+      <div class="sidebar-brand">
+        <a >Ok Sulotion</a>
+        <div id="close-sidebar">
+          <i class="fa fa-times"></i>
+        </div>
+      </div>
+      <div class="sidebar-header">
+        <div class="user-pic">
+          <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+            alt="User picture">
+        </div>
+        <div class="user-info" *ngIf="isnull(_userLogin) " >
+          <span class="user-name">Jhon
+            <strong>{{_userLogin.name}}</strong>
+          </span>
+          <span class="user-role">Administrator</span>
+          <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Online</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="sidebar-search">
+        <div>
+          <div class="input-group">
+            <input type="text" class="form-control search-menu" placeholder="Search...">
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li class="header-menu">
+            <span>General</span>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="" (click)="$event.preventDefault()">
+              <i class="fa fa-tachometer-alt"></i>
+              <span>Dashboard</span>
+              <span class="badge badge-pill badge-warning">New</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a routerLink="/add-stand" >Ajouter un stand
+                    <span class="badge badge-pill badge-success">Pro</span>
+                  </a>
+                </li>
+                <li>
+                  <a routerLink="/stands" >Liste De stands</a>
+                </li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="header-menu">
+            <span>Extra</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-folder"></i>
+              <span>Examples</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#">
+        <i class="fa fa-bell"></i>
+        <span class="badge badge-pill badge-warning notification">3</span>
+      </a>
+      <a href="#">
+        <i class="fa fa-envelope"></i>
+        <span class="badge badge-pill badge-success notification">7</span>
+      </a>
+
+      <a href="#">
+        <i class="fa fa-power-off"></i>
+      </a>
+    </div>
+  </nav>
+</div> -->
+
+<nav class="page-sidebar" id="sidebar">
+    <div id="sidebar-collapse">
+        <div class="admin-block d-flex">
+            <div>
+                <img src="./assets/img/admin-avatar.png" width="45px">
+            </div>
+            <div class="admin-info">
+                <div class="font-strong">James Brown</div><small>Administrator</small></div>
+        </div>
+        <ul class="side-menu metismenu">
+            <li>
+                <a class="active" href=""><i class="sidebar-item-icon fa fa-th-large"></i>
+                  <span class="nav-label">Dashboard</span>
+              </a>
+            </li>
+        </ul>
+        <!-- <li class="heading">FEATURES</li>
+            <li>
+                <a href="javascript:;"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                  <span class="nav-label">Basic UI</span><i class="fa fa-angle-left arrow"></i></a>
+                <ul class="nav-2-level collapse" aria-expanded="false">
+                    <li>
+                        <a href="colors.html">Colors</a>
+                    </li>
+                    <li>
+                        <a href="typography.html">Typography</a>
+                    </li>
+                    <li>
+                        <a href="panels.html">Panels</a>
+                    </li>
+                    <li>
+                        <a href="buttons.html">Buttons</a>
+                    </li>
+                    <li>
+                        <a href="tabs.html">Tabs</a>
+                    </li>
+                    <li>
+                        <a href="alerts_tooltips.html">Alerts &amp; Tooltips</a>
+                    </li>
+                    <li>
+                        <a href="badges_progress.html">Badges &amp; Progress</a>
+                    </li>
+                    <li>
+                        <a href="lists.html">List</a>
+                    </li>
+                    <li>
+                        <a href="cards.html">Card</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;"><i class="sidebar-item-icon fa fa-edit"></i>
+                  <span class="nav-label">Forms</span><i class="fa fa-angle-left arrow"></i></a>
+                <ul class="nav-2-level collapse" aria-expanded="false">
+                    <li>
+                        <a href="form_basic.html">Basic Forms</a>
+                    </li>
+                    <li>
+                        <a href="form_advanced.html">Advanced Plugins</a>
+                    </li>
+                    <li>
+                        <a href="form_masks.html">Form input masks</a>
+                    </li>
+                    <li>
+                        <a href="form_validation.html">Form Validation</a>
+                    </li>
+                    <li>
+                        <a href="text_editors.html">Text Editors</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;"><i class="sidebar-item-icon fa fa-table"></i>
+                  <span class="nav-label">Tables</span><i class="fa fa-angle-left arrow"></i></a>
+                <ul class="nav-2-level collapse" aria-expanded="false">
+                    <li>
+                        <a href="table_basic.html">Basic Tables</a>
+                    </li>
+                    <li>
+                        <a href="datatables.html">Datatables</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;"><i class="sidebar-item-icon fa fa-bar-chart"></i>
+                  <span class="nav-label">Charts</span><i class="fa fa-angle-left arrow"></i></a>
+                <ul class="nav-2-level collapse" aria-expanded="false">
+                    <li>
+                        <a href="charts_flot.html">Flot Charts</a>
+                    </li>
+                    <li>
+                        <a href="charts_morris.html">Morris Charts</a>
+                    </li>
+                    <li>
+                        <a href="chartjs.html">Chart.js</a>
+                    </li>
+                    <li>
+                        <a href="charts_sparkline.html">Sparkline Charts</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;"><i class="sidebar-item-icon fa fa-map"></i>
+                  <span class="nav-label">Maps</span><i class="fa fa-angle-left arrow"></i></a>
+                <ul class="nav-2-level collapse" aria-expanded="false">
+                    <li>
+                        <a href="maps_vector.html">Vector maps</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="icons.html"><i class="sidebar-item-icon fa fa-smile-o"></i>
+                  <span class="nav-label">Icons</span>
+              </a>
+            </li>
+            <li class="heading">PAGES</li>
+            <li>
+                <a href="javascript:;"><i class="sidebar-item-icon fa fa-envelope"></i>
+                  <span class="nav-label">Mailbox</span><i class="fa fa-angle-left arrow"></i></a>
+                <ul class="nav-2-level collapse" aria-expanded="false">
+                    <li>
+                        <a href="mailbox.html">Inbox</a>
+                    </li>
+                    <li>
+                        <a href="mail_view.html">Mail view</a>
+                    </li>
+                    <li>
+                        <a href="mail_compose.html">Compose mail</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="calendar.html"><i class="sidebar-item-icon fa fa-calendar"></i>
+                  <span class="nav-label">Calendar</span>
+              </a>
+            </li>
+            <li>
+                <a href="javascript:;"><i class="sidebar-item-icon fa fa-file-text"></i>
+                  <span class="nav-label">Pages</span><i class="fa fa-angle-left arrow"></i></a>
+                <ul class="nav-2-level collapse" aria-expanded="false">
+                    <li>
+                        <a href="invoice.html">Invoice</a>
+                    </li>
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li>
+                        <a href="register.html">Register</a>
+                    </li>
+                    <li>
+                        <a href="lockscreen.html">Lockscreen</a>
+                    </li>
+                    <li>
+                        <a href="forgot_password.html">Forgot password</a>
+                    </li>
+                    <li>
+                        <a href="error_404.html">404 error</a>
+                    </li>
+                    <li>
+                        <a href="error_500.html">500 error</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;"><i class="sidebar-item-icon fa fa-sitemap"></i>
+                  <span class="nav-label">Menu Levels</span><i class="fa fa-angle-left arrow"></i></a>
+                <ul class="nav-2-level collapse" aria-expanded="false">
+                    <li>
+                        <a href="javascript:;">Level 2</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <span class="nav-label">Level 2</span><i class="fa fa-angle-left arrow"></i></a>
+                        <ul class="nav-3-level collapse" aria-expanded="false">
+                            <li>
+                                <a href="javascript:;">Level 3</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Level 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul> -->
+    </div>
+</nav>
